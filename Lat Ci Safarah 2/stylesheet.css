@@ -1,0 +1,57 @@
+body{
+    font-family: 'Merriweather', serif;
+}
+
+table, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    border : 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table{
+margin-left: auto;
+margin-right: auto;
+}
+
+th{
+    font-size: 2vw;
+    background-color: rgb(0, 0, 119);
+    color: white;
+}
+
+tbody>tr:nth-child(even){
+    background-color: rgb(176, 176, 176, 0.2);
+}
+
+tbody>tr:hover{
+    background-color: rgb(149, 149, 149);
+}
+
+td{
+    font-size: 1vw;
+}
+
+table>caption{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+h1{
+    font-style: italic;
+    font-weight: 300;
+}
+
+h1:hover{
+    font-size: 100px;
+    text-transform: lowercase;
+    font-style: italic;
+}

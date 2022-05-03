@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabel</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--import font google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--import font google-->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Ubuntu&display=swap" rel="stylesheet"> <!--import font google-->
+</head>
+
+<body>
+    <!--Umumnya tabel strukturnya sederhana
+    Tabel   -> Caption -> Opsional
+            -> THEAD (Buat Judul Tabel Di Row) -> TR (Buat Pembatas Row) -> TH (Buat Item PerColumn)
+            -> TBODY (Buat Data Abis Thead  Per Row) -> TR (Buat Pembatas Row) -> TD (Buat Data PerColumn)
+    -->
+    <table>
+        <caption>Tabel 1. Data Pengunjung</caption>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>No. Telphone</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Budi</td>
+                <td>Jalan SIngkong</td>
+                <td>08108108</td>
+                <td>Sakit</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Budi</td>
+                <td></td>
+                <td>08108108</td>
+                <td>Sakit</td>
+            </tr>
+            <tr> <!--Note : kalo datanya kosong, tetap kasi element td biar ga kegeser datanya-->
+                <td>3</td>
+                <td>Budi</td>
+                <td></td>
+                <td>08108108</td>
+                <td>Sakit</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--ini element (h1) bwt dites css font hover (klo mouse ngepoint di element itu ntr bakal ngelakuin perintah yang ada di css)-->
+    <h1>CEK WARNA</h1>
+</body>
+
+</html>
