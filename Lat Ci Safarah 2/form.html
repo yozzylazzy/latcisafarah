@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Latihan Form</title>
+</head>
+
+<body>
+    <!--dalam form ada 2 method dalam mengirimkan atau parsing data antar file .html atau .php
+    1. Get -> ini nantinya bakal ngeparsing data lewat url http, jadi bisa keliatan pas pindah file .html/.php, ini aga beresiko
+    kalau bkin web yg aman2 gtu kaya digital bank atau belanja onlen, tapi ini pnya kecepatan yang cepat.
+    2.post -> ini teknik parsing data lewat belakangnya http, jadi bakal lebih aman dan ga bakal keliatan karena ga lewat
+    URL kaya si method get. Tetapi memang kecepatannya lebih lambat saja.-->
+    <form method="get">
+        <!--ini buat input textbox nama-->
+        <label for="nama">Nama</label><br>
+        <input type="text" id="nama" placeholder="Masukkan Nama Anda"><br>
+
+        <!--ini buat input textbox password-->
+        <label for="psw">password</label> <br>
+        <input type="password" id="psw" placeholder="Masukkan password Anda"><br>
+        <br>
+
+
+        <!--radio button-->
+        <!--dalam radio button, name nya harus sama-->
+        <!--radion button untuk pilihan hanya satu dan tidak banyak-->
+        <label>Jenis Kelamin</label><br>
+        <input type="radio" id="boy" name="gender" value="">
+        <label for="boy">Boy</label><br>
+        <input type="radio" id="girl" name="gender">
+        <label for="girl">Girl</label><br>
+        <input type="radio" id="unknown" name="gender">
+        <label for="unknown">Unknown</label><br>
+        <input type="radio" id="hidden" name="gender">
+        <label for="hidden">Hidden</label><br>
+
+        <!--Checkbox-->
+        <!--checkbox untuk pilihan banyak-->
+        <fieldset>
+            <legend>Kendaraan</legend>
+            <input type="checkbox" id="Mobil" name="Mobil" value="Mobil">
+            <label for="Mobil">Mobil</label>
+            <input type="checkbox" id="Motor" name="Motor" value="Motor">
+            <label for="Motor">Motor</label>
+            <input type="checkbox" id="Sepeda" name="Sepeda" value="Sepeda">
+            <label for="Sepeda">Sepeda</label>
+            <input type="checkbox" id="Kaki" name="Kaki" value="Kaki">
+            <label for="Kaki">Kaki</label>
+        </fieldset><br>
+
+        <!--Dropdown-->
+        <!--fungsinya sama kaya radio button, tpi biasanya lebih rapih dalam form page websitie, dan bisa di customisasi CSSnya-->
+        <!--dan biasanya si dropdown ini untk pilihan yang cukup banyak seperti region atau provinsi dan kota, dan lain2-->
+        <label for="pddk">Pendidikan Terakhir</label>
+        <select id="pddk" name="pendidikan">
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+            <!--optgroup hanya untuk menjabarkan opsi yang perlu dijabarkan-->
+            <optgroup value="Kuliah">Kuliah
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+            </optgroup>
+        </select><br><br>
+
+        <!--ini buat input date, nanti datenya otomatis dari htmlnya si datepickernya
+        tetapi perlu diingat kalau value date ini adalah mm/dd/yyyy buat nanti klo uda
+        make javascript-->
+        <label for="tgllahir">Pilih Tanggal Lahir Anda : </label>
+        <input type="date" id="tgllahir" name="birthdate"><br><br>
+
+        <!--ini buat input color dengan menggunakan colorpicker-->
+        <label for="color">Pilih Warna Kesukaan Anda : </label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!--ini buat input text yang panjang, sama seperti input type text di atas, tapi lebih panjang textarea, biasanya buat saran
+        dan lain2-->
+        <label for="Pesan">Masukkan Saran Anda</label><br>
+        <textarea id="Pesan" name="message" rows="5" cols="30" placeholder="Isi Pesan Saran Anda"></textarea>
+        <br>
+        <br>
+        <br>
+
+        <!--Button-->
+        <!--Button ada 2 teknik, pakai <input> atau langsung pakai <button></button>
+        button ini nantinya yang akan mentrigger apa yang akan dilakukan dengan perintah onclick seperti di bawah ini-->
+        <button type="submit" onclick="alert('Yakin Data Sudah Benar?')">Submit</button>
+        <input type="submit" value="Simpan">
+        <input type="reset" value="Reset">
+
+        <!--Sebenarnya perintah2 seperti onclick masih banyak lagi, ada onmouse,onscroll, dll
+        Itu harus sambil nyoba2 sendiri karena saking banyaknya wkwkwk-->
+
+        <!--Abis ini kita blajar bootstrap-->
+    </form>
+</body>
+
+</html>
