@@ -1,0 +1,30 @@
+Instal Visual Studio Code
+https://code.visualstudio.com/download (IDE)
+
+-->Instal extension :
+-Auto Close Tag
+-Auto Rename Tag
+-Better Comments
+-Trailing Spaces
+-Error Lens
+-formate: CSS/LESS/SCSS formatter
+-Babel JavaScript
+-JavaScript (ES6) code snippets
+--------------------------------------------
+
+Instal Laragon (FULL) :
+https://laragon.org/download/index.html
+--------------------------------------------
+
+Browser, Recommended Chrome <- pakai ini bagusnya, tapi klo mozilla ato edge jga gapapa
+--------------------------------------------
+
+
+Materi yang akan kita pelajari :
+-HTML (Basic, Heading, Table, Navbar, Link, Element with tag and no tag, form, switch page)
+-CSS (Inline, Internal, External)
+-Bootstrap (Banyak Mirip kaya HTML)
+-Database (Data Modified Language)
+-JavaScript (Banyak v:)
+-DOM (Struktur hierarki HTML biar bisa berubah2)
+-PHP (Ini masi lama v:, tpi kurang lebih ngehubungin database ke html biar bisa ubah sama hapus data)
